@@ -2,32 +2,33 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 Box.propTypes = {
-	url: PropTypes.string,
-	type: PropTypes.string
+  url: PropTypes.string,
+  type: PropTypes.string
 };
 
 function Box({ url, type }) {
-	let boxElement;
 
-	switch (type) {
-		case 'image':
-			boxElement = <img src={url} alt='img' />;
-			break;
-		case 'video':
-			boxElement = <video controls>
-										 <source src={url} type="video/mp4" />
-										 Your browser does not support the video tag.
-									 </video>
-			break;
-		default:
-			console.log('invalid type');
-	}
+  // render element based on whether it is image or video
+  function renderBoxEelement(type, url) {
+    switch (type) {
+      case 'image':
+        return <img src={url} alt='img' />;
+      case 'video':
+        return <video controls>
+                <source src={url} type="video/mp4" />
+                Your browser does not support the video tag.
+               </video>
+      default:
+        console.log('invalid type');
+    }
+  }
 
-	return (
-		<div className='box'>
-			{boxElement}
-		</div>
-	)
+  // render Box
+  return (
+    <div className='box'>
+      {renderBoxEelement(type, url)}
+    </div>
+  )
 }
 
 export default Box;
