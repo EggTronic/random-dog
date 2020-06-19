@@ -2,6 +2,8 @@
 
 Randomly generate 8 dog images or videos
 
+Due to limited time (preparing exam), I did not handle the possible errors such as failed to get data.
+
 ---
 ## ⚙️ Features
 - Layout -> pure css in App.css
@@ -25,10 +27,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There are 2 unit test examples specified in src/App.test.js
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.
