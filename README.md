@@ -2,6 +2,8 @@
 
 Randomly generate 8 dog images or videos
 
+DEMO: https://eggtronic.github.io/random-dog/
+
 Due to limited time (preparing exam), I did not handle the possible errors such as failed to get data.
 
 ---
