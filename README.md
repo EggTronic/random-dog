@@ -22,6 +22,7 @@ Due to limited time (preparing exam), I did not handle the possible errors such 
   -  checkType -> check if the file type is valid or not
 
 ---
+## ⚙️ Scripts
 ### `npm start`
 
 Runs the app in the development mode.<br />
@@ -35,3 +36,7 @@ Launches the test runner in the interactive watch mode.
 ### `npm run build`
 
 Builds the app for production to the `build` folder.
+
+### `npm run deploy`
+
+Deploy the demo to github pages
