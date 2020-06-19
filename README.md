@@ -5,7 +5,9 @@ Randomly generate 8 medias
 - Responsive view -> Media query
 - Get Data -> use fetch API to fetch data
 - Two components (function components with hook)
-  - BoxContainer: fetch the url and pass it to boxes
+  - BoxContainer: 
+    - fetch the url and pass it to boxes
+    - It has a fixed button at the buttom of the viewport to re-fetch urls
   - Box: visualize media based on the file type
 - Utils contian 2 functions
   -  fetchData: return 8 valid urls (retry when file type is not valid)
